@@ -8,4 +8,9 @@ $ apt-get moo
  *  /\---/\ 
     ~~   ~~   
 ...."Have you mooed today?"...
+
 ```
+
+~~Trabalho para comparar os tempos das listas de prioridades~~
+
+~~Criação do HeapTernario~~
