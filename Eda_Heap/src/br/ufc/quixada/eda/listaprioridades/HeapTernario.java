@@ -108,11 +108,14 @@ public class HeapTernario {
 	
 	public void alterarPrioridade(int prioridade, int novaPrioridade){
 		int i;
-		for (i = 1; i < this.n && this.vetor[i] != prioridade; i++)
-		if(i == this.n) return;
+		for (i = 1; i <= this.n && this.vetor[i] != prioridade; i++){
+			if(i > this.n) return;
+		}		
 		vetor[i] = novaPrioridade;
-		if(prioridade > novaPrioridade) descer(i);
-		else subir(i);
+		if(prioridade > novaPrioridade) 
+			descer(i);
+		else 
+			subir(i);
 	}
 	
 	@Override
